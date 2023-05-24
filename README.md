@@ -1,16 +1,17 @@
 # Setting up your environment
 
-1. Download GoDot 4.0 https://godotengine.org/download/windows/, https://godotengine.org/download/macos/
-2. Download Git and set it up. If you don't have that: https://kbroman.org/github_tutorial/pages/first_time.html
+1. Download GoDot 4.0 for [Windows](https://godotengine.org/download/windows/) or [MacOS](https://godotengine.org/download/macos/)
+2. Download Git and set it up. If you don't have that, follow this [First Time Git Setup](https://kbroman.org/github_tutorial/pages/first_time.html) guide.
 3. In your git terminal go to a folder where you want it to be set up and point it to this repo. With "git clone https://github.com/MelodicCanvas/legendary-octo-journey.git"
 4. Open GoDot and go to import then find the project.godot file and open it. 
+
 
 ---
 
 # Pushing code
 
 1. Point your git to this with git remote add https://github.com/MelodicCanvas/legendary-octo-journey.git
-2. Run ```git checkout -b branch-name```
+2. Run ```git checkout -b branch-name``` make your branch name the thing you are working on, Ex. CharacterAttackingHitBox
 3. Do your changes
 4. Push them
 5. Request a Pull Request
@@ -20,7 +21,7 @@
 # How to commit code
 
 1. In your git command line after navigating to your folder, type ```git add .```, this will add all changes.
-2. Next type git commit -m "brief description of the changes made in the commit", try to do this for every "section" of code your write as it will make maintaining and pr's easier
+2. Next type git commit -m "brief description of the changes made in the commit", try to do this for every "section" of code your write as it will make maintaining and pull requests easier.
 3. Repeat 1 and 2 until completed
 4. Then type ```git push```
 
@@ -48,21 +49,21 @@ The only thing to keep in mind for the music is that it need to be in .ogg forma
 
 # Commit Messages
 
-Try to do commit messages in past tense and make them comprehensive. Instead of "Will add things" say "Added character sprite sheet for idle animation" . That way if something goes wrong, we can revert easily and see what happened. Try to do mini commits if possible, since we're just starting most of our commits are going to be big. This again relates back to being able to revert and see where we went wrong.
+Try to do commit messages in past tense and make them comprehensive. Instead of "Will add things" say "Added character sprite sheet for idle animation" . That way if something goes wrong, we can revert easily and see what happened. Try to do mini commits if possible, since we're just starting most of our commits are going to be big. This again relates back to being able to revert and see where we went wrong. By reverting, or resetting our code, we can always have at least one point in time where our code worked. It's similar to spam saving in games.
 
 ---
 
 # Code
 
 Since I started the project I'm going to be coding in my own style with my own styling.\
-For example functions should take on PascalCase. 
+For example functions should take on PascalCase. First letter is capital and so is the middle letter.
 ```
 void PascalCase() {
   return;
 }
 ```
 \
-And then variables should take on camelCase
+And then variables should take on camelCase. Middle letter is capital 
 ```
 var movementSpeed = 100;
 ```
@@ -152,7 +153,7 @@ If you've never done a git workflow here's a quick tutorial: https://www.atlassi
 2. Select "New Issue"
 3. Give it a title of what you want to submit
 4. Leave a good description of the requirements
-5. Add the correct label from the right hand panel
+5. Add the correct label from the right hand panel. For example if you are submitting a bug write it down as bug, etc.
 6. Submit
 
 ---
@@ -174,5 +175,8 @@ Discord!
 
 Future organization things
 - [ ] Force pull requests to merge into master
-- [ ] Use branches to ensure stable branch
+- [ ] Use branches to ensure a stable main branch
+
+We want to have our master branch protected from us just pushing changes onto it. Just in case something is wrong, we can fix it or review it in a pull request. The last thing we want is for someone to accidentally delete everything and push or to change a file they shouldn't have changed and push.
+
 ---
