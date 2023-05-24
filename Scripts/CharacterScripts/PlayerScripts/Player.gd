@@ -10,6 +10,9 @@ func _physics_process(_delta):
 		Input.get_action_strength("right") - Input.get_action_strength("left"), 
 		Input.get_action_strength("down") - Input.get_action_strength("up"),
 	);
+	# This entire section will be changed when animation tree
+	# and animationPlayer is done, currently with the asset pack
+	# I cannot do a tree
 	if (Input.is_action_pressed("attack") && rightRelease) && !attackAnimationFinished:
 		attackAnimationFinished=false
 		_animated_sprite.play("attack_right")
