@@ -141,11 +141,11 @@ If you've never done a git workflow here's a quick tutorial: https://www.atlassi
 6. Submit
 ---
 # Code Reviews
-Understandability: Is the code easy to understand? Does it include comments where necessary to explain complex or non-obvious parts?\
-Functionality: Does the code do what it's supposed to do? Does it handle edge cases and potential errors?\
-Consistency: Does the code follow the established coding conventions and style guidelines? Is it consistent with the rest of the codebase?\
-Efficiency: Could the code be made more efficient or performant? Are there any unnecessary computations or data structures?\
-Modularity: Is the code well-structured and modular? Are functions and classes small, focused, and do they adhere to the Single Responsibility Principle?\
+1. Understandability: Is the code easy to understand? Does it include comments where necessary to explain complex or non-obvious parts?\
+2. Functionality: Does the code do what it's supposed to do? Does it handle edge cases and potential errors?\
+3. Consistency: Does the code follow the established coding conventions and style guidelines? Is it consistent with the rest of the codebase?\
+4. Efficiency: Could the code be made more efficient or performant? Are there any unnecessary computations or data structures?\
+5. Modularity: Is the code well-structured and modular? Are functions and classes small, focused, and do they adhere to the Single Responsibility Principle?\
 ---
 # Communication
 Discord!
