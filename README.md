@@ -2,6 +2,7 @@
 
 ![Spritesheet](/Assets/Player/Basic%20Charakter%20Spritesheet.png)
 \
+(/Assets/Player/Basic%20Charakter%20Spritesheet.png) \
 Create your sprite sheets to follow the above format. \
 Please avoid creating them in the following manner: \
 ![Invalid Spritesheet](/Assets/Player/Asset%20Pack-V3/Player%20Sword%20Idle/Player%20Sword%20Idle%2048x48.png)
