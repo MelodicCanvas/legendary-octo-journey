@@ -174,8 +174,8 @@ Discord!
 ---
 
 Future organization things
-- [ ] Force pull requests to merge into master
-- [ ] Use branches to ensure a stable main branch
+- [x] Force pull requests to merge into master
+- [x] Use branches to ensure a stable main branch
 
 We want to have our master branch protected from us just pushing changes onto it. Just in case something is wrong, we can fix it or review it in a pull request. The last thing we want is for someone to accidentally delete everything and push or to change a file they shouldn't have changed and push.
 
