@@ -28,3 +28,7 @@ And then variables should take on camelCase
 var movementSpeed = 100;
 ```
 Any more conventions you can just follow the codebase or if you want to do your own styling just tell me and we can talk about it.
+---
+# Future organization things
+- [ ] Force pull requests to merge into master
+- [ ] Use branches to ensure stable branch
