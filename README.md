@@ -126,10 +126,7 @@ public class Circle {
 8.There are 3 more but I won't cover it because it's semi-irrelevant\
 Any more conventions you can just follow the codebase or if you want to do your own styling just tell me and we can talk about it.
 ---
-Future organization things
-- [ ] Force pull requests to merge into master
-- [ ] Use branches to ensure stable branch
----
+
 If you've never done a git workflow here's a quick tutorial: https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 ---
 # Submitting bugs/features
@@ -149,4 +146,8 @@ If you've never done a git workflow here's a quick tutorial: https://www.atlassi
 ---
 # Communication
 Discord!
+---
+Future organization things
+- [ ] Force pull requests to merge into master
+- [ ] Use branches to ensure stable branch
 ---
