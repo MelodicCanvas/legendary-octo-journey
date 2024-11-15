@@ -12,29 +12,32 @@ func _physics_process(delta):
 		Input.get_action_strength("down") - Input.get_action_strength("up")
 	)
 	velocity = input_direction * movement_speed
-	
+
 	# Update facing direction based on input
-	if Input.is_action_pressed("right"):
+	if input_direction.x > 0:
 		is_facing_right = true
-		if attack_animation_finished:
-			animated_sprite.play("right_run")
-	elif Input.is_action_pressed("left"):
+	elif input_direction.x < 0:
 		is_facing_right = false
-		if attack_animation_finished:
-			animated_sprite.play("left_run")
-	# Handle attack input
-	elif Input.is_action_just_pressed("attack") and attack_animation_finished:
+
+	# Handle attack input first
+	if Input.is_action_just_pressed("attack") and attack_animation_finished:
 		attack_animation_finished = false
 		if is_facing_right:
 			animated_sprite.play("attack_right")
 		else:
 			animated_sprite.play("attack_left")
-	# Idle animation when not moving
+	# Handle movement animations if not attacking
 	elif attack_animation_finished:
-		if is_facing_right:
-			animated_sprite.play("idle_right")
+		if input_direction.x != 0:
+			if is_facing_right:
+				animated_sprite.play("right_run")
+			else:
+				animated_sprite.play("left_run")
 		else:
-			animated_sprite.play("idle_left")
+			if is_facing_right:
+				animated_sprite.play("idle_right")
+			else:
+				animated_sprite.play("idle_left")
 
 	# Move the character
 	move_and_slide()
